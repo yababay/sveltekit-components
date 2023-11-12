@@ -1,7 +1,7 @@
 <script lang="ts">
-    import '../styles/variables.scss'
+    import '../app.scss'
     import '@yababay67/styles/src/layouts/publications/index.scss'
-    import { Header, Footer } from '$lib/index.js'
+    import { Header, Footer } from '@yababay67/svelte-components'
     import { author, description, title, subtitle, keywords, license, url, brand } from '../SEO.json'
     import { PUBLIC_WITH_BOOTSTRAP } from '$env/static/public'
     import { HeaderType, type MenuItem } from '$lib/types.js';
