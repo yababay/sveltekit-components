@@ -1,9 +1,0 @@
-$background-image-ratio: calc(800 / 1500); 
-$background-image-height: 100vh;
-$background-image-width: calc($background-image-height * $background-image-ratio);
-
-$main-margin-right-ratio: .8;
-$main-margin-right: calc($background-image-width * $main-margin-right-ratio);
-$middle-point: calc($main-margin-right + 700px + 3rem);
-$wide-point: calc($main-margin-right * 2 + 700px);
-$wide-point-padding-right: 15%;
