@@ -1,0 +1,12 @@
+$title-font-url: '/fonts/CormorantGaramond-Bold.ttf' !default;
+$subtitle-font-url: '/fonts/CormorantGaramond-Regular.ttf' !default;
+
+@font-face {
+    font-family: "TitleFont";
+    src: url($title-font-url) format("truetype");
+}
+
+@font-face {
+    font-family: "SubtitleFont";
+    src: url($subtitle-font-url) format("truetype");
+}

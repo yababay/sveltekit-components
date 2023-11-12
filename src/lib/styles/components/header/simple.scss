@@ -1,0 +1,56 @@
+@import '../../defaults/index';
+
+$header-height: clamp(7rem, calc(100vh * .15), 10rem);
+$header-title-height: calc($header-height * $header-title-height-ratio);
+$header-subtitle-height: calc($header-height - $header-title-height * $header-subtitle-height-ratio);
+
+$header-title-font-size: clamp($header-title-min-font-size, calc($header-title-height / $header-line-height-ratio), $header-title-max-font-size) !important;
+$header-subtitle-font-size:  clamp($header-subtitle-min-font-size, calc($header-subtitle-height / $header-line-height-ratio), $header-subtitle-max-font-size) !important;
+
+header {
+    height: $header-height;
+
+    nav {
+        width: 100%;
+        height: 100%;
+        max-width: $max-article-width;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        h1, p {
+            text-align: center;
+        }
+    }
+
+    h1, p {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        height: $header-title-height;
+        line-height: $header-title-height;
+        font-size: $header-title-font-size;
+        font-family: TitleFont;
+        letter-spacing: .5rem;
+        a {
+            text-decoration: none;
+            color: $link-color !important;
+        }
+    }
+
+    p {
+        height: $header-subtitle-height;
+        line-height: $header-subtitle-height;
+        font-size: $header-subtitle-font-size;
+        font-family: SubtitleFont;
+        font-variant: small-caps;
+        letter-spacing: .5rem;
+        color: $header-subtitle-color;
+        span {
+            vertical-align: top;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@import '../../defaults/index';
+
+article {
+    width: 100%;
+    max-width: $max-article-width;
+    padding: .5rem;
+
+    img {
+        max-width: $max-media-width;
+        margin: 2rem auto;
+        display: block;
+    }
+
+    iframe {
+        margin: 2rem auto;
+        display: block;
+    }
+
+    h1, h2, h3, h4, h5 {
+        color: $article-special-color-1;
+        font-family: SubtitleFont;
+    }
+
+    a {
+        color: $article-special-color-2;
+    }
+
+    blockquote {
+        border-left: 5px solid $article-special-color-1;
+        padding: 0;
+        padding-left: 2rem;
+        margin: 2rem 0;
+
+        p {
+            white-space: break-spaces;
+            border: 0;
+            padding: 0;
+            display: block;
+            color: whitesmoke;
+            margin: 0 0 .7rem 0;
+            font-family: serif; 
+            font-size: 1rem;
+            font-style: italic;
+        }
+    }
+}

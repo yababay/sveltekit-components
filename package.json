@@ -1,6 +1,6 @@
 {
 	"name": "@yababay67/svelte-components",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -17,7 +17,9 @@
 			"svelte": "./dist/index.js"
 		},
 		"./markdown": "./dist/server/markdown.js",
-		"./types": "./dist/types.d.ts"
+		"./types": "./dist/types.d.ts",
+		"./layout/dummy.scss": "./dist/styles/layouts/dummy.scss",
+		"./layout/publications.scss": "./dist/styles/layouts/publications/index.scss"
 	},
 	"files": [
 		"dist",
