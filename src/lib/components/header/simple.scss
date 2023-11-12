@@ -1,0 +1,48 @@
+@import '../../styles/defaults';
+
+$header-height: 10rem;
+$header-title-height-ratio: .65;
+$header-title-height: calc($header-height * $header-title-height-ratio);
+$header-subtitle-height: calc($header-height - $header-title-height * 1.1);
+
+$header-title-min-font-size: 2.8rem;
+$header-title-max-font-size: 3.2rem;
+$header-title-font-size: clamp($header-title-min-font-size, calc($header-title-height / 1.2), $header-title-max-font-size) !important;
+
+$header-subtitle-max-font-size: 1.5rem;
+$header-subtitle-min-font-size: 1.2rem;
+$header-subtitle-font-size:  clamp($header-subtitle-min-font-size, calc($header-subtitle-height / 1.5), $header-subtitle-max-font-size) !important;
+
+header {
+    height: $header-height;
+    h1, p {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        height: $header-title-height;
+        line-height: $header-title-height;
+        font-size: $header-title-font-size;
+        font-family: TitleFont;
+        letter-spacing: .5rem;
+        a {
+            text-decoration: none;
+            color: $link-color !important;
+        }
+    }
+
+    p {
+        height: $header-subtitle-height;
+        line-height: $header-subtitle-height;
+        font-size: $header-subtitle-font-size;
+        font-family: SubtitleFont;
+        font-variant: small-caps;
+        letter-spacing: .5rem;
+        color: $header-subtitle-color;
+        span {
+            vertical-align: top;
+        }
+    }
+}

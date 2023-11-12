@@ -1,0 +1,27 @@
+@import '../../components/header/simple';
+@import '../../components/footer/index';
+
+body, #body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#body {
+    display: grid;
+    grid-template:
+        "header" $header-height
+        "main" auto
+        "footer" $footer-height;
+}
+
+#body > header {
+    grid-area: header;
+}
+
+#body > main {
+    grid-area: main;
+}
+
+#body > footer {
+    grid-area: footer;
+}
