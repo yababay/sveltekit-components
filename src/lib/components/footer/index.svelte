@@ -6,6 +6,7 @@
 </script>
 
 <footer>
+    <p>
     {#if license}
         <a href={url}>{title}</a> 
         <span>&nbsp;by&nbsp;</span> 
@@ -25,4 +26,5 @@
     {:else}
         &copy;&nbsp;{year}&nbsp;{author}
     {/if}
+    </p>
 </footer>

@@ -6,9 +6,11 @@ $footer-min-height: calc($footer-img-height + 4px);
 $footer-max-height: calc($footer-img-height + 1rem);
 $footer-height: clamp($footer-min-height, calc(100vh * .1), $footer-max-height);
 
-footer {
+footer, footer p {
     height: $footer-height;
     line-height: $footer-height;
+}
+footer {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -16,6 +18,11 @@ footer {
     align-items: center;
     justify-content: center;
     font-size: smaller;
+    p {
+        width: 100%;
+        max-width: $max-article-width;
+        text-align: center;
+    }
     a {
         color: $link-color;
         text-decoration: none;

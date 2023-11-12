@@ -4,21 +4,11 @@ main article {
     padding-left: 2rem;
 }
 
-main, header {
+main, header, footer {
     display: flex;
     justify-content: end;
     margin-right: $main-margin-right;
-}
 
-header nav {
-    width: 100%;
-    max-width: $max-article-width;
-    h1, p {
-        text-align: center;
-    }
-}
-
-main, header {
     @media screen and (max-width: $middle-point){
         justify-content: center;
         margin-right: 0;
