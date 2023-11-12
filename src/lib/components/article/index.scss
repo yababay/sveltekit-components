@@ -2,7 +2,7 @@
 
 article {
     width: 100%;
-    max-width: 80ch;
+    max-width: $max-article-width;
     padding: .5rem;
     img {
         max-width: $max-media-width;

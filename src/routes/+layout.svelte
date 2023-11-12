@@ -1,6 +1,6 @@
 <script lang="ts">
     import '../styles/variables.scss'
-    import '../lib/styles/layouts/dummy.scss'
+    import '../lib/styles/layouts/publications/index.scss'
     import { Header, Footer } from '$lib/index.js'
     import { author, description, title, subtitle, keywords, license, url, brand } from '../SEO.json'
     import { PUBLIC_WITH_BOOTSTRAP } from '$env/static/public'

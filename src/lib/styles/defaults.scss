@@ -1,5 +1,23 @@
 $link-color: blue !default;
 $header-subtitle-color: grey !default;
-$article-special-color-1: cyan;
-$article-special-color-2: magenta;
-$max-media-width: 690px;
+$article-special-color-1: cyan !default;
+$article-special-color-2: magenta !default;
+$max-media-width: 690px !default;
+$body-bg: #ddd !default; 
+$body-color: #000 !default;
+$body-image: url('/background.png') !default;
+$link-color: #090909 !default;
+$max-article-width: clamp(700px, 75vw, 80ch) !default;
+
+$title-font-url: '/fonts/CormorantGaramond-Bold.ttf' !default;
+$subtitle-font-url: '/fonts/CormorantGaramond-Regular.ttf' !default;
+
+@font-face {
+    font-family: "TitleFont";
+    src: url($title-font-url) format("truetype");
+}
+
+@font-face {
+    font-family: "SubtitleFont";
+    src: url($subtitle-font-url) format("truetype");
+}
