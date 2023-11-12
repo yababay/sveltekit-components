@@ -1,7 +1,6 @@
 <script lang="ts">
-    //import type { WithHtml } from '$lib/types'
-    import Article from '$lib/components/article/index.svelte'
-    import type { WithHtml } from '$lib/types.js';
+    import { Article } from '@yababay67/svelte-components'
+    import type { WithHtml } from '@yababay67/svelte-components/types';
 
     export let data: WithHtml
     const { html, title, description } = data

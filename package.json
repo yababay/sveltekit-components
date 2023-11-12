@@ -42,7 +42,7 @@
 	"types": "./dist/index.d.ts",
 	"type": "module",
 	"dependencies": {
-		"@yababay67/svelte-components": "^1.0.0",
+		"@yababay67/svelte-components": "^1.0.3",
 		"bootstrap-icons": "^1.11.1",
 		"showdown": "^2.1.0"
 	}
