@@ -1,4 +1,4 @@
-import { loremIpsum } from "@yababay67/svelte-components/server"
+import { loremIpsum } from "@yababay67/svelte-components/markdown"
 import type { WithHtml } from "@yababay67/svelte-components/types"
 
 export async function load({ fetch }): Promise<WithHtml> {
