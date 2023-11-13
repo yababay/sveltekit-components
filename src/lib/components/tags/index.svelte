@@ -1,11 +1,10 @@
 <script lang="ts">
     import { writable } from 'svelte/store'
     import { onMount } from 'svelte'
-    import { PUBLIC_TAGGER_URL } from '$env/static/public'
-    import Autocomplete from './autocomplete'
+    import Autocomplete from './autocomplete.js'
     import TagBadge from './TagBadge.svelte'
 
-    export let tags: string[] = []
+    export let url: string, tags: string[] = []
 
     const reactiveTags = writable(Array.isArray(tags) && tags.length && tags.sort() || [])
 
@@ -47,7 +46,7 @@
     <div class="mb-2">
         <input name="tags" type="hidden" bind:this={hiddenTags}>
         <input
-            data-server={PUBLIC_TAGGER_URL}
+            data-server={url}
             type="text"
             class="form-control"
             placeholder="выберите или введите тэги"

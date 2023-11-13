@@ -1,8 +1,8 @@
 <script lang="ts">
-    import '../styles/variables.scss'
-    import '@yababay67/styles/src/layouts/publications/index.scss'
+    import '../app.scss'
+    import '$lib/styles/layouts/publications/index.scss'
     import { Header, Footer } from '$lib/index.js'
-    import { author, description, title, subtitle, keywords, license, url, brand } from '../SEO.json'
+    import { author, description, title, subtitle, keywords, license, url, brand } from '../app.json'
     import { PUBLIC_WITH_BOOTSTRAP } from '$env/static/public'
     import { HeaderType, type MenuItem } from '$lib/types.js';
 
