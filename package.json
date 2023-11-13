@@ -1,10 +1,11 @@
 {
 	"name": "@yababay67/svelte-components",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
 		"push": "npm publish --access public",
+		"checkout:template": "git add . && git commit -am ok && git checkout template",
 		"preview": "vite preview",
 		"package": "svelte-kit sync && svelte-package && publint",
 		"prepublishOnly": "npm run package",
