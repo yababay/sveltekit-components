@@ -4,7 +4,12 @@
     import { Header, Footer } from '@yababay67/svelte-components'
     import { author, description, title, subtitle, keywords, license, url, brand } from '../app.json'
     import { PUBLIC_WITH_BOOTSTRAP } from '$env/static/public'
-    import { HeaderType, type MenuItem } from '@yababay67/svelte-components/types';
+    import type { MenuItem } from '@yababay67/svelte-components/types';
+
+    enum HeaderType {
+        WITH_MENU = 0,
+        SIMPLE = 1
+    }
 
     export let 
         menuItems: MenuItem[] | undefined = undefined, 
