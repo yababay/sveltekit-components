@@ -4,7 +4,7 @@
     import { Header, Footer } from '$lib/index.js'
     import { author, description, title, subtitle, keywords, license, url, brand } from '../app.json'
     import { PUBLIC_WITH_BOOTSTRAP } from '$env/static/public'
-    import { HeaderType, type MenuItem } from '$lib/types.js';
+    import { HeaderType, type MenuItem } from '$lib/types.ts';
 
     export let 
         menuItems: MenuItem[] | undefined = undefined, 

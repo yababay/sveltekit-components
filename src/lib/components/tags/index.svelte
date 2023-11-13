@@ -4,7 +4,7 @@
     import Autocomplete from './autocomplete.js'
     import TagBadge from './TagBadge.svelte'
 
-    export let url: string, tags: string[] = []
+    export let url: string = '/tags', tags: string[] = []
 
     const reactiveTags = writable(Array.isArray(tags) && tags.length && tags.sort() || [])
 
