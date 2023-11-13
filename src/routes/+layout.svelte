@@ -2,9 +2,9 @@
     import '../app.scss'
     import '@yababay67/svelte-components/layout/publications.scss'
     import { Header, Footer } from '@yababay67/svelte-components'
-    import { author, description, title, subtitle, keywords, license, url, brand } from '../SEO.json'
+    import { author, description, title, subtitle, keywords, license, url, brand } from '../app.json'
     import { PUBLIC_WITH_BOOTSTRAP } from '$env/static/public'
-    import { HeaderType, type MenuItem } from '$lib/types.js';
+    import { HeaderType, type MenuItem } from '@yababay67/svelte-components/types';
 
     export let 
         menuItems: MenuItem[] | undefined = undefined, 
