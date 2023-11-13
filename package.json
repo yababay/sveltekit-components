@@ -6,6 +6,7 @@
 		"build": "vite build && npm run package",
 		"push": "npm publish --access public",
 		"checkout:template": "git add . && git commit -am ok && git checkout template",
+		"checkout:dummy": "git add . && git commit -am ok && git checkout dummy",
 		"preview": "vite preview",
 		"package": "svelte-kit sync && svelte-package && publint",
 		"prepublishOnly": "npm run package",
