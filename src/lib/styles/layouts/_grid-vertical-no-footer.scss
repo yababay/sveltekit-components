@@ -1,3 +1,5 @@
+@import '../components/footer/index';
+
 body, #body {
     width: 100%;
     min-height: 100vh;
@@ -8,7 +10,6 @@ body, #body {
     grid-template:
         "header" $header-height
         "main" auto
-        "footer" $footer-height;
 }
 
 #body > header {
@@ -19,6 +20,3 @@ body, #body {
     grid-area: main;
 }
 
-#body > footer {
-    grid-area: footer;
-}

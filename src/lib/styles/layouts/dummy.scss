@@ -1,6 +1,9 @@
+@import '../defaults/index.scss';
+@import '../components/header/simple.scss';
+@import '../components/article/index.scss';
+@import '../components/footer/index.scss';
 @import 'grid-vertical';
-@import '../components/article/index';
 
-article {
-    margin: 1rem auto;
+article, nav {
+    margin: 0 auto
 }

@@ -5,7 +5,7 @@
     let { pathname } = $page.url
     if(!pathname.trim()) pathname = '/'
 
-    export let menuItems: MenuItem[], brand: string, theme: string = 'dark'
+    export let menu: MenuItem[], brand: string, theme: string = 'dark'
 </script>
 
 <nav
@@ -31,7 +31,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbar-text">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                {#each menuItems as {title, href, items} }
+                {#each menu as {title, href, items} }
                     {#if items}
                         <li class="nav-item dropdown">   
                             <!-- svelte-ignore a11y-invalid-attribute -->
@@ -41,7 +41,7 @@
                             <ul class="dropdown-menu">
                                 {#each items as { title, href } }
                                 <li>
-                                    <a {href} class="dropdown-item" class:active={href === pathname}>{title}</a>
+                                    <a {href} class="dropdown-item">{title}</a>
                                 </li>
                                 {/each}
                             </ul>

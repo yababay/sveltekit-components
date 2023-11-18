@@ -1,13 +1,13 @@
 <script lang="ts">
-    import type { FooterProps } from "$lib/types.js";
-    export let props: FooterProps
-    const { author, title, license, url } = props
+    import type { SeoProps } from "$lib/types.js";
+    export let seo: SeoProps
+    const { author, title, license, url } = seo
     const year = new Date().getFullYear()
 </script>
 
 <footer>
     <p>
-    {#if license}
+    {#if license && url}
         <a href={url}>{title}</a> 
         <span>&nbsp;by&nbsp;</span> 
         <a href="https://github.com/yababay">{author}</a> 
