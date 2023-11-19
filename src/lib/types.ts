@@ -1,5 +1,5 @@
 export type HeaderType =  'with-navbar' | 'simple'
-export type BootstrapSource = 'local' | 'remote'
+export type BootstrapSource = 'local' | 'remote' | 'none'
 
 export type WithHtml = { html: string, title?: string , description?: string }
 
