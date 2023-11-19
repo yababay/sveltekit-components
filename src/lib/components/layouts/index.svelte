@@ -1,6 +1,5 @@
 <script lang="ts">
-
-    import type { SeoProps, HeaderType, BootstrapSource, MenuItem } from '../../types.js'
+    import type { SeoProps, HeaderType, BootstrapSource, MenuItem } from '$lib/types.js'
     import Header from '../header/index.svelte'
     import Footer from '../footer/index.svelte'
 

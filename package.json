@@ -1,9 +1,8 @@
 {
-	"name": "@yababay67/svelte-components",
-	"version": "1.0.10",
+	"name": "@yababay67/sveltekit-components",
+	"version": "0.0.6",
 	"scripts": {
 		"dev": "vite dev",
-		"relink": "vite build && npm link",
 		"build": "vite build && npm run package",
 		"push": "npm publish --access public",
 		"checkout:template": "git add . && git commit -am ok && git checkout template",
@@ -21,7 +20,11 @@
 		},
 		"./markdown": "./dist/server/markdown.js",
 		"./icons": "./dist/server/icons.js",
-		"./types": "./dist/types.d.ts"
+		"./types": "./dist/types.d.ts",
+		"./styles/dummy.scss": "./dist/styles/layouts/dummy.scss",
+		"./styles/publications.scss": "./dist/styles/layouts/publications/index.scss",
+		"./styles/with-navbar.scss": "./dist/styles/layouts/with-navbar.scss",
+		"./styles/without-footer.scss": "./dist/styles/layouts/without-footer.scss"
 	},
 	"files": [
 		"dist",

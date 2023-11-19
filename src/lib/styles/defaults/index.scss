@@ -1,6 +1,7 @@
 @import 'colors';
 @import 'fonts';
 @import 'header';
+@import '../../../../../../src/app';
 
 $max-media-width: 690px !default;
 $max-article-width: clamp(700px, 75vw, 80ch) !default;

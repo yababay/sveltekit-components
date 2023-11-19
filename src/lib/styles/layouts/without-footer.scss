@@ -1,2 +1,8 @@
+@import '../defaults/index.scss';
 @import '../components/header/with-navbar';
+@import '../components/article/index.scss';
 @import 'grid-vertical-no-footer';
+
+article {
+    margin: 0 auto
+}
