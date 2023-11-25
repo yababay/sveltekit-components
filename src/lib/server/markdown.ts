@@ -1,5 +1,6 @@
 import showdown from 'showdown'
 import type { Fetch } from "../types.js"
+import { base } from '$app/paths'
 
 const converter = new showdown.Converter()
 
@@ -18,6 +19,7 @@ export const getArticle = async (fetch: Fetch, path: string, repo: string | unde
     html = converter.makeHtml(html.trim())
     .replace(/[\r\n]+/, ' ')
     .replace(/\ src\=\"img\//g, ` src="${repo}/img/`)
+    .replace(/href=\"\/articles/g, `href=\"${base}/articles`)
     const arr = /<h1[^\>]+\>([^\<]+)/.exec(html) ?? []
     const [ _, title ] = arr
     return [ html, title, description ? description.replace(/^-- /, '') : undefined ]

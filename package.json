@@ -1,6 +1,6 @@
 {
 	"name": "@yababay67/sveltekit-components",
-	"version": "0.0.9",
+	"version": "1.0.6",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -19,6 +19,7 @@
 			"svelte": "./dist/index.js"
 		},
 		"./markdown": "./dist/server/markdown.js",
+		"./redis": "./dist/server/redis.js",
 		"./icons": "./dist/server/icons.js",
 		"./types": "./dist/types.d.ts",
 		"./styles/dummy.scss": "./dist/styles/layouts/dummy.scss",
@@ -46,13 +47,17 @@
 		"svelte-check": "^3.4.3",
 		"tslib": "^2.4.1",
 		"typescript": "^5.0.0",
+		"@types/redis": "^4.0.11",
 		"vite": "^4.4.2"
 	},
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"type": "module",
 	"dependencies": {
-		"bootstrap-icons": "^1.11.1",
+		"bootstrap-icons": "^1.11.2",
+		"redis": "^4.6.11",
+		"redis-om": "^0.4.2",
 		"showdown": "^2.1.0"
 	}
 }
+ 
