@@ -18,11 +18,27 @@ export const MONTHS = [
     'декабрь',
 ]
 
+//export const year = writable(new Date().getFullYear())
+
+
+export const year = writable(new Date().getFullYear())
 export const choosen = writable(today)
 export const nextMonth = () => current.set(new Date(get(days).slice(-1)[0].getTime() + DAY_IN_MILLIS))
 export const prevMonth = () => current.set(new Date(get(days)[0].getTime() - DAY_IN_MILLIS))
 
 export const current = writable(today)
+
+
+year.subscribe($year => {
+    const date = get(current)
+    date.setFullYear($year)
+    current.set(new Date(date))
+})
+
+current.subscribe($current => {
+    year.set($current.getFullYear())
+})
+
 
 export const days = derived(current, $current => {
     const seed = $current
@@ -53,7 +69,8 @@ export const weeks = derived(days, $days => {
     const days = [...$days]
     const weeks: Date[][] = []
     while(days.length) weeks.push(days.splice(0, 7))
-    return weeks
+        return weeks
 })
 
 export const month = derived(days, $days => $days[15].getMonth())
+export const refresh = (d: Date) => choosen.set(d)

@@ -1,18 +1,3 @@
-<script lang="ts">
-    import type { WithHtml } from '$lib/types'
-    import Article from '$lib/components/article/index.svelte'
-
-    export let data: WithHtml
-    const { html, title, description } = data
-</script>
-
-<Article {html} {title} {description} />
-
-<svelte:head>
-    {#if !!title}
-        <title>{title}</title>
-    {/if}
-    {#if !!description}
-        <meta name="description" content={description}>
-    {/if}
-</svelte:head>
+<h1>Welcome to your library project</h1>
+<p>Create your package using @sveltejs/package and preview/showcase your work with SvelteKit</p>
+<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>

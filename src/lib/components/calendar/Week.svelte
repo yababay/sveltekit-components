@@ -1,33 +1,33 @@
 <script lang="ts">
-    import { choosen, days, month } from './store'
+
+    import { choosen, month } from './store'
+    import './index.scss'
+
     export let week: Date[], today = new Date
+
 </script>
 
 <tr>
     {#each week as day}
         <td 
             class="td-square" 
-            class:td-today={day.getMonth() === today.getMonth() && day.getDate() === today.getDate()}
+            class:td-today={day.getMonth() === today.getMonth() && day.getDate() === $choosen.getDate()}
             class:prev-month={day.getMonth() !== $month}
-            on:click={() => $choosen = day}
         >
-            {day.getDate()}
+            <a href="/archive/by-date/{day.toISOString().slice(0, 10)}" rel="external">{day.getDate()}</a>
         </td>
     {/each}
 </tr>
 
 <style lang="scss">
-    .prev-month {
-        color: silver
-    }
-    .td-today {
-        background-color: cadetblue;
-    }
-    .td-square {
-        cursor: pointer;
-        width: 1.5rem;
-        height: 1.5rem;
-        text-align: center;
-        font-family: monospace;
+    td{
+        height: 30px;
+        a {
+            color: inherit;
+            text-decoration: none;
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
     }
 </style>
