@@ -1,6 +1,6 @@
 {
 	"name": "@yababay67/sveltekit-components",
-	"version": "0.0.1",
+	"version": "1.1.1",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -28,14 +28,16 @@
 		"!dist/**/*.spec.*"
 	],
 	"peerDependencies": {
+		"@sveltejs/kit": "^2.0.0",
 		"svelte": "^4.0.0"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
 		"@sveltejs/adapter-auto": "^3.0.0",
-		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/adapter-node": "^5.2.8",
 		"@sveltejs/package": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"@types/showdown": "^2.0.6",
 		"publint": "^0.2.0",
 		"svelte": "^4.2.7",
 		"svelte-check": "^4.0.0",
@@ -45,5 +47,8 @@
 	},
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"showdown": "^2.1.0"
+	}
 }
