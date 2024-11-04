@@ -1,0 +1,17 @@
+@import 'elements';
+@import 'settings';
+
+body, .bare-layout, .layout-with-header {
+    min-height: 100vh;
+}
+
+main, .layout-with-aside, .layout-with-aside > section, .layout-with-aside > aside {
+    min-height: calc(100vh - $header-height);
+}
+
+main, .bare-layout, .layout-with-aside > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
