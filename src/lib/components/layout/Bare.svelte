@@ -1,15 +1,23 @@
 <script lang="ts">
-
-    import './styles/bare.scss'
-
-    export let title: string = 'hello'
-
+    export let title: string = ''
 </script>
 
 <div class="bare-layout">
     <slot />
 </div>
 
+<style lang="scss">
+    .bare-layout {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
 <svelte:head>
-    <title>{title}</title>
+    {#if title}
+        <title>{title}</title>
+    {/if}
 </svelte:head>

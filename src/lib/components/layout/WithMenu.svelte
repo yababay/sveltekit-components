@@ -7,7 +7,7 @@
     export let items: MenuItems | undefined = undefined
     export let brand: string | undefined = undefined
     export let icon: string | undefined = undefined
-    export let title: string = 'hello'
+    export let title: string = ''
 
 </script>
 
@@ -17,5 +17,7 @@
 </WithHeader>
 
 <svelte:head>
-    <title>{title}</title>
+    {#if title}
+        <title>{title}</title>
+    {/if}
 </svelte:head>
