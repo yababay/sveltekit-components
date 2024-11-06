@@ -19,5 +19,8 @@
 <style lang="scss">
     table {
         max-width: 100ch;
+        tr * {
+            font-size: .9rem;
+        }
     }
 </style>
